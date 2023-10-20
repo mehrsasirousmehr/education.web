@@ -1,0 +1,101 @@
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    @media only screen and (min-width: 576px) {
+        max-width: 540px;
+    }
+    @media only screen and (min-width: 768px) {
+        max-width: 720px;
+    }
+    @media only screen and (min-width: 992px) {
+        max-width: 960px;
+    }
+    @media only screen and (min-width: 1200px) {
+        max-width: 1140px;
+    }
+    @media only screen and (min-width: 1400px) {
+        max-width: 1320px;
+    }
+}
+
+/* Flex helper یه بار می نویسیم چند بار استفاده می کنیم:) */
+.flex {
+    display: flex;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-column {
+    flex-direction: column;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-space-between {
+    justify-content: space-between;
+}
+.align-items-center {
+    align-items: center;
+}
+/* padding, margin helper  */
+.pt-10 {
+    padding-top: 1rem;
+}
+.pb-10 {
+    padding-bottom: 1rem;
+}
+.pt-20 {
+    padding-top: 2rem;
+}
+.pb-20 {
+    padding-bottom: 2rem;
+}
+.mt-20 {
+    margin-top: 2rem;
+}
+.mb-20 {
+    margin-bottom: 2rem;
+}
+.mt-50 {
+    margin-top: 5rem;
+}
+.mb-50 {
+    margin-bottom: 5rem;
+}
+.mt-60 {
+    margin-top: 6rem;
+}
+.mb-60 {
+    margin-bottom: 6rem;
+}
+
+// colors
+.white {
+    color: white;
+}
+
+// images
+.img__responsive {
+    width: 100%;
+}
+
+.img-round {
+    border-radius: 50%;
+}
+
+.hidden {
+    display: none;
+}
+.show-small {
+    @media only screen and (max-width: 992px) {
+        display: block;
+    }
+}
+.show-larg {
+    @media only screen and (min-width: 993px) {
+        display: block;
+    }
+}

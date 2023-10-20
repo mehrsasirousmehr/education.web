@@ -1,0 +1,33 @@
+.glass {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    z-index: 1;
+    width: 50rem;
+    height: 36rem;
+    border: 1px solid $color-gray2;
+    border-radius: 1rem;
+
+    // فایرفاکس از بک دراپ پشتیبانی نمی کنه در نتیجه
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
+
+    @supports (
+        backdrop-filter: blur(3px) or (-webkit-backdrop-filter: blur(3px))) {
+        background-color: transparent;
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
+    }
+
+    @media only screen and (max-width: 768px) {
+        position: relative;
+        right: 0;
+        width: 90%;
+        margin: 1.5rem auto;
+        background-color: $color-white;
+    }
+
+    &:focus-within {
+        background-color: $color-white;
+    }
+}
